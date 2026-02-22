@@ -1,0 +1,58 @@
+.accordion {
+  display: grid;
+  gap: 20px;
+  padding: 60px 30px;
+  color: white;
+}
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  background-color: white;
+  color: black;
+  padding: 24px;
+}
+.text,
+.number {
+  font-size: clamp(12px, 20px, 24px);
+  font-weight: 500;
+  margin: 0;
+}
+.text-description {
+  line-height: 1.5rem;
+  justify-self: stretch;
+  margin: 0;
+}
+.text-list {
+  line-height: 1.5rem;
+  padding-left: 20px;
+}
+.number--light-grey {
+  color: var(--color-light-grey);
+}
+.text--dark-grey {
+  color: var(--color-dark-grey);
+}
+.dropdown-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+.open.item {
+  border-top: 5px solid var(--accent-color);
+}
+.open .hidden-box {
+  display: block;
+}
+.open .number {
+  color: var(--accent-color);
+}
