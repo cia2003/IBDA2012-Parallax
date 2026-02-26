@@ -46,7 +46,7 @@ body {
 #text {
     position: relative;
     color: white;
-    font-size: 10em;
+    font-size: clamp(2rem, 10rem, 7rem);
     z-index: 1;
 }
 
