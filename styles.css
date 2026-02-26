@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 @import url("styles/moon-parallax.css");
 @import url("styles/accordion.css");
+@import url("styles/quote.css");
 
 :root {
   --primary-color: #0a2a43;
@@ -16,4 +17,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
 }

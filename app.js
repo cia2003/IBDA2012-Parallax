@@ -1,4 +1,4 @@
-import { frequentlyAskedQuestions } from "./scripts/data.js";
+import { frequentlyAskedQuestions, astronautQuotes } from "./scripts/data.js";
 import { insertItemToAccordionSection } from "./scripts/components.js";
 
 // Parallax Scrolling Effect
@@ -31,4 +31,34 @@ for (let i = 0; i < lenFAQ; i++) {
     // showFAQ(frequentlyAskedQuestions[i].id);
 }
 
+// Quotes Slider Functionality
+// Quotes Element
+let counter = 0;
+const quotesData = astronautQuotes;
+const totalData = Object.keys(quotesData).length;
+
+function updateSlide(counter) {
+  const currentData = quotesData[counter];
+
+  console.log(currentData);
+
+  const astronautImg = document.querySelector(".astronaut-img");
+  const astronautName = document.querySelector(".astronaut-name");
+  const quoteText = document.querySelector(".quote-text");
+
+  astronautImg.src = currentData.img;
+  astronautName.textContent = currentData.name;
+  quoteText.textContent = currentData.quote;
+}
+function previousSlide() {
+  counter = (counter - 1 + totalData) % totalData;
+  updateSlide(counter);
+}
+function nextSlide() {
+  counter = (counter + 1 + totalData) % totalData;
+  updateSlide(counter);
+}
+
+window.previousSlide = previousSlide;
+window.nextSlide = nextSlide;
 window.showFAQ = showFAQ; // Make the function globally accessible for inline event handlers

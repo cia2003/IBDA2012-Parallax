@@ -1,14 +1,15 @@
 // Accordion component
 function createFAQItem(data) {
-    const listHTML = data.list && data.list.length
-    ? `
+  const listHTML =
+    data.list && data.list.length
+      ? `
       <ul class="text-list text--dark-grey">
-        ${data.list.map(item => `<li>${item}</li>`).join("")}
+        ${data.list.map((item) => `<li>${item}</li>`).join("")}
       </ul>
     `
-    : "";
+      : "";
 
-    return `
+  return `
         <section class="item" id="${data.id}">
             <p class="number number--light-grey">${data.number}</p>
             <p class="text">${data.question}</p>
@@ -39,8 +40,8 @@ function createFAQItem(data) {
     `;
 }
 function insertItemToAccordionSection(data) {
-    const container = document.getElementById('faq-container');
-    container.insertAdjacentHTML('beforeend', createFAQItem(data));
+  const container = document.getElementById("faq-container");
+  container.insertAdjacentHTML("beforeend", createFAQItem(data));
 }
 
 export { insertItemToAccordionSection };

@@ -9,17 +9,70 @@
   </head>
   <body>
     <article class="moon-parallax">
-        <img src="assets/bg.jpg" alt="background-image" id="bg">
-        <img src="assets/moon.png" alt="moon-image" id="moon">
-        <img src="assets/mountain.png" alt="mountain-image" id="mountain">
-        <img src="assets/road.png" alt="road-image" id="road">
-        <h2 id="text">Moon Light</h2>
+      <img src="assets/bg.jpg" alt="background-image" id="bg" />
+      <img src="assets/moon.png" alt="moon-image" id="moon" />
+      <img src="assets/mountain.png" alt="mountain-image" id="mountain" />
+      <img src="assets/road.png" alt="road-image" id="road" />
+      <h2 id="text">Moon Light</h2>
     </article>
 
     <article class="accordion" id="faq-container">
-        <h1>Frequently Asked Questions</h1>
+      <h1>Frequently Asked Questions</h1>
     </article>
 
-    <article class="testimonials" id=""></article>
+    <article class="quotes" id="testimonials-container">
+      <h1>Quotes</h1>
+
+      <section class="slide">
+        <img
+          class="astronaut-img"
+          src="assets/astronaut/neil-armstrong.jpg"
+          alt="astronaut-image"
+        />
+        <h2 class="astronaut-name">Neil Armstrong</h2>
+        <p class="quote-text">
+          That's one small step for a man, one giant leap for mankind.
+        </p>
+      </section>
+
+      <button class="button-left" onclick="previousSlide()">
+        <svg
+          class="button-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="button-right" onclick="nextSlide()">
+        <svg
+          class="button-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </article>
+
+    <footer>
+      <p>&copy; 2026 Parallax Website. All rights reserved.</p>
+    </footer>
   </body>
 </html>

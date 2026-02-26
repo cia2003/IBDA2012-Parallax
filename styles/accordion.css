@@ -1,7 +1,7 @@
 .accordion {
   display: grid;
   gap: 20px;
-  padding: 60px 30px;
+  padding: 20vh 30px;
   color: white;
 }
 .item {

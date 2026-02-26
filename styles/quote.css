@@ -1,0 +1,51 @@
+.quotes {
+  background-color: #f0f0f0;
+  padding: 60px 30px;
+  position: relative;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.astronaut-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.button-left,
+.button-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  top: 50%;
+  transition: 0.3s ease;
+}
+.button-left {
+  left: 0%;
+  margin-left: 30px;
+}
+.button-right {
+  right: 0%;
+  margin-right: 30px;
+}
+.button-left:hover {
+  transform: scale(1.2);
+}
+.button-right:hover {
+  transform: scale(1.2);
+}
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
